@@ -373,7 +373,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 31,
     birthYear: 1969,
-    passedAway: null,
+    passedAway: "12/4/25",
   },
   {
     firstName: "Michael",
