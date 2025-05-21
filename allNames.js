@@ -272,12 +272,12 @@ export const theNames = [
     passedAway: null,
   },
   {
-    firstName: "Ramanath A",
+    firstName: "Ramanath",
     lastName: "I",
     birthMonth: "December",
     birthDay: 25,
     birthYear: 1933,
-    passedAway: null,
+    passedAway: "1/12/16",
   },
   {
     firstName: "Balan",
