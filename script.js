@@ -77,9 +77,17 @@ function displayResults(results) {
     } else if (aHuman.birthYear) {
       birthday = aHuman.birthYear;
     }
-    div.innerHTML = `<strong>${aHuman.firstName} ${aHuman.lastName}</strong>${
-      birthday ? ": " + birthday : ""
-    }`;
+    let line = `<strong>${aHuman.firstName} ${aHuman.lastName}</strong>`;
+    if (aHuman.passedAway) {
+      line += " ---";
+      if (birthday) {
+        line += ` Born: ${birthday} -`;
+      }
+      line += ` Passed Away: ${aHuman.passedAway}, RIP ${aHuman.firstName} ${aHuman.lastName}`;
+    } else if (birthday) {
+      line += `: ${birthday}`;
+    }
+    div.innerHTML = line;
     resultsDiv.appendChild(div);
   });
 }

@@ -5,6 +5,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 26,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Lauren",
@@ -12,6 +13,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 1,
     birthYear: 1975,
+    passedAway: null,
   },
   {
     firstName: "Paulette",
@@ -19,6 +21,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 28,
     birthYear: null,
+    passedAway: "3/10/23",
   },
   {
     firstName: "James",
@@ -26,6 +29,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 13,
     birthYear: null,
+    passedAway: "6/13/11",
   },
   {
     firstName: "Sue",
@@ -33,6 +37,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Anne",
@@ -40,6 +45,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 15,
     birthYear: 1973,
+    passedAway: null,
   },
   {
     firstName: "Ruth",
@@ -47,6 +53,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 8,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Leah",
@@ -54,6 +61,7 @@ export const theNames = [
     birthMonth: "October",
     birthDay: 3,
     birthYear: 1970,
+    passedAway: null,
   },
   {
     firstName: "Robert",
@@ -61,6 +69,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 6,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "James",
@@ -68,6 +77,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Helena",
@@ -75,6 +85,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Anne",
@@ -82,6 +93,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 13,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "George",
@@ -89,6 +101,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 17,
     birthYear: 1941,
+    passedAway: null,
   },
   {
     firstName: "Diane",
@@ -96,6 +109,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 21,
     birthYear: 1942,
+    passedAway: null,
   },
   {
     firstName: "Pat",
@@ -103,6 +117,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 25,
     birthYear: 1974,
+    passedAway: null,
   },
   {
     firstName: "Leigh",
@@ -110,6 +125,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 21,
     birthYear: 1977,
+    passedAway: null,
   },
   {
     firstName: "Maurice",
@@ -117,6 +133,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 21,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Rita",
@@ -124,6 +141,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 28,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Pat",
@@ -131,6 +149,7 @@ export const theNames = [
     birthMonth: "June",
     birthDay: 25,
     birthYear: 1981,
+    passedAway: null,
   },
   {
     firstName: "Mike",
@@ -138,6 +157,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 9,
     birthYear: 1984,
+    passedAway: null,
   },
   {
     firstName: "Jack",
@@ -145,6 +165,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 14,
     birthYear: 1987,
+    passedAway: null,
   },
   {
     firstName: "Daniel",
@@ -152,6 +173,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 27,
     birthYear: 1988,
+    passedAway: null,
   },
   {
     firstName: "Marty",
@@ -159,6 +181,7 @@ export const theNames = [
     birthMonth: "June",
     birthDay: 2,
     birthYear: 1948,
+    passedAway: null,
   },
   {
     firstName: "John",
@@ -166,6 +189,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Katherine",
@@ -173,6 +197,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "John",
@@ -180,6 +205,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Edith",
@@ -187,6 +213,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 22,
     birthYear: 1992,
+    passedAway: null,
   },
   {
     firstName: "Christine",
@@ -194,6 +221,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 27,
     birthYear: 1966,
+    passedAway: null,
   },
   {
     firstName: "Michael",
@@ -201,6 +229,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 5,
     birthYear: 1967,
+    passedAway: null,
   },
   {
     firstName: "Shekar",
@@ -208,6 +237,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 14,
     birthYear: 1963,
+    passedAway: null,
   },
   {
     firstName: "Kamal",
@@ -215,6 +245,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 28,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Mary",
@@ -222,6 +253,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: 1944,
+    passedAway: null,
   },
   {
     firstName: "Bharathi",
@@ -229,6 +261,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 14,
     birthYear: 1958,
+    passedAway: null,
   },
   {
     firstName: "Yogesh",
@@ -236,6 +269,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 20,
     birthYear: 2006,
+    passedAway: null,
   },
   {
     firstName: "Ramanath A",
@@ -243,6 +277,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 25,
     birthYear: 1933,
+    passedAway: null,
   },
   {
     firstName: "Balan",
@@ -250,6 +285,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 30,
     birthYear: 1964,
+    passedAway: null,
   },
   {
     firstName: "Kuti",
@@ -257,6 +293,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 18,
     birthYear: 1958,
+    passedAway: null,
   },
   {
     firstName: "Eshi",
@@ -264,6 +301,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 19,
     birthYear: 1954,
+    passedAway: null,
   },
   {
     firstName: "Bharathi",
@@ -271,6 +309,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 2,
     birthYear: 1961,
+    passedAway: null,
   },
   {
     firstName: "Amba",
@@ -278,6 +317,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 12,
     birthYear: 1954,
+    passedAway: null,
   },
   {
     firstName: "Carolyn",
@@ -285,6 +325,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 24,
     birthYear: 1973,
+    passedAway: null,
   },
   {
     firstName: "Franky",
@@ -292,6 +333,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 11,
     birthYear: 2023,
+    passedAway: null,
   },
   {
     firstName: "Bob",
@@ -299,6 +341,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Ryan",
@@ -306,6 +349,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Alana",
@@ -313,6 +357,7 @@ export const theNames = [
     birthMonth: "May",
     birthDay: 1,
     birthYear: 2025,
+    passedAway: null,
   },
   {
     firstName: "Brigid",
@@ -320,6 +365,7 @@ export const theNames = [
     birthMonth: "May",
     birthDay: 1,
     birthYear: 2025,
+    passedAway: null,
   },
   {
     firstName: "Gerard",
@@ -327,6 +373,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 31,
     birthYear: 1969,
+    passedAway: null,
   },
   {
     firstName: "Michael",
@@ -334,6 +381,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 11,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Wendy",
@@ -341,6 +389,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 9,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Maureen",
@@ -348,6 +397,7 @@ export const theNames = [
     birthMonth: "June",
     birthDay: 4,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Dylan",
@@ -355,6 +405,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 10,
     birthYear: 2015,
+    passedAway: null,
   },
   {
     firstName: "Deirdre",
@@ -362,6 +413,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 1,
     birthYear: 1959,
+    passedAway: null,
   },
   {
     firstName: "Siobhan",
@@ -369,6 +421,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 1,
     birthYear: 1959,
+    passedAway: null,
   },
   {
     firstName: "Grace",
@@ -376,6 +429,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 1,
     birthYear: 1961,
+    passedAway: null,
   },
   {
     firstName: "Mary",
@@ -383,6 +437,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Robert",
@@ -390,6 +445,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Patricia",
@@ -397,6 +453,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: 1974,
+    passedAway: null,
   },
   {
     firstName: "Christine",
@@ -404,6 +461,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 6,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Courtney",
@@ -411,6 +469,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 12,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Riley",
@@ -425,6 +484,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 6,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "John, Jr.",
@@ -432,6 +492,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 10,
     birthYear: 2006,
+    passedAway: null,
   },
   {
     firstName: "John",
@@ -439,6 +500,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 11,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Jake",
@@ -446,6 +508,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 22,
     birthYear: 1969,
+    passedAway: null,
   },
   {
     firstName: "Oscar",
@@ -453,6 +516,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 16,
     birthYear: 2004,
+    passedAway: null,
   },
   {
     firstName: "Razel",
@@ -460,6 +524,7 @@ export const theNames = [
     birthMonth: "May",
     birthDay: 31,
     birthYear: 2001,
+    passedAway: null,
   },
   {
     firstName: "Orozco",
@@ -467,6 +532,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 23,
     birthYear: 1966,
+    passedAway: null,
   },
   {
     firstName: "Orozco",
@@ -474,6 +540,7 @@ export const theNames = [
     birthMonth: "June",
     birthDay: 14,
     birthYear: 1972,
+    passedAway: null,
   },
   {
     firstName: "Meredith",
@@ -488,6 +555,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 25,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Josiah",
@@ -495,6 +563,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 13,
     birthYear: 1971,
+    passedAway: null,
   },
   {
     firstName: "Shannon",
@@ -502,6 +571,7 @@ export const theNames = [
     birthMonth: "May",
     birthDay: 24,
     birthYear: 1970,
+    passedAway: null,
   },
   {
     firstName: "Kai",
@@ -509,6 +579,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 25,
     birthYear: 1987,
+    passedAway: null,
   },
   {
     firstName: "Eryn",
@@ -516,6 +587,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 8,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Charlie",
@@ -530,6 +602,7 @@ export const theNames = [
     birthMonth: "October",
     birthDay: 17,
     birthYear: 2001,
+    passedAway: null,
   },
   {
     firstName: "Naomi",
@@ -537,6 +610,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 21,
     birthYear: 1999,
+    passedAway: null,
   },
   {
     firstName: "Jonathon",
@@ -544,6 +618,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 31,
     birthYear: 1965,
+    passedAway: null,
   },
   {
     firstName: "Marino",
@@ -551,6 +626,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 16,
     birthYear: 1961,
+    passedAway: null,
   },
   {
     firstName: "Lynne",
@@ -558,6 +634,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 21,
     birthYear: 1965,
+    passedAway: null,
   },
   {
     firstName: "Oliver",
@@ -565,6 +642,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 21,
     birthYear: 2001,
+    passedAway: null,
   },
   {
     firstName: "Paul",
@@ -572,6 +650,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 4,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Andrey",
@@ -579,6 +658,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 30,
     birthYear: 1988,
+    passedAway: null,
   },
   {
     firstName: "Danika",
@@ -586,6 +666,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 10,
     birthYear: 2022,
+    passedAway: null,
   },
   {
     firstName: "Lorelei",
@@ -593,6 +674,7 @@ export const theNames = [
     birthMonth: "June",
     birthDay: 25,
     birthYear: 2018,
+    passedAway: null,
   },
   {
     firstName: "Ophelia",
@@ -600,6 +682,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 22,
     birthYear: 2022,
+    passedAway: null,
   },
   {
     firstName: "Carol",
@@ -607,6 +690,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 31,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Billie",
@@ -614,6 +698,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 2,
     birthYear: 1931,
+    passedAway: null,
   },
   {
     firstName: "Bertha",
@@ -621,6 +706,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: 1882,
+    passedAway: null,
   },
   {
     firstName: "Joseph",
@@ -628,6 +714,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 6,
     birthYear: 1923,
+    passedAway: null,
   },
   {
     firstName: "Roger",
@@ -635,6 +722,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 26,
     birthYear: 1926,
+    passedAway: null,
   },
   {
     firstName: "Pamela",
@@ -642,6 +730,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: 1956,
+    passedAway: null,
   },
   {
     firstName: "Selena",
@@ -649,6 +738,7 @@ export const theNames = [
     birthMonth: "May",
     birthDay: 21,
     birthYear: 1978,
+    passedAway: null,
   },
   {
     firstName: "Livia",
@@ -656,6 +746,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 10,
     birthYear: 1980,
+    passedAway: null,
   },
   {
     firstName: "Tony",
@@ -663,6 +754,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: 2002,
+    passedAway: null,
   },
   {
     firstName: "Isabel",
@@ -670,6 +762,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: 2002,
+    passedAway: null,
   },
   {
     firstName: "Patrick, Jr.",
@@ -677,6 +770,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 9,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Patrick",
@@ -684,6 +778,7 @@ export const theNames = [
     birthMonth: "September",
     birthDay: 11,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Maryanne",
@@ -691,6 +786,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Sloane",
@@ -698,20 +794,16 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 3,
     birthYear: null,
+    passedAway: null,
   },
-  {
-    firstName: "Jason",
-    lastName: "S",
-    birthMonth: "August",
-    birthDay: 18,
-    birthYear: null,
-  },
+
   {
     firstName: "John",
     lastName: "S",
     birthMonth: "July",
     birthDay: 31,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Omer",
@@ -719,6 +811,7 @@ export const theNames = [
     birthMonth: "January",
     birthDay: 21,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Evangeline",
@@ -726,6 +819,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Scott",
@@ -733,6 +827,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Peter",
@@ -740,6 +835,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 1,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Peggy",
@@ -761,6 +857,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Elizabeth",
@@ -768,6 +865,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
   },
   {
     firstName: "Lisa",
@@ -775,6 +873,7 @@ export const theNames = [
     birthMonth: "February",
     birthDay: 24,
     birthYear: 1975,
+    passedAway: null,
   },
   {
     firstName: "Elise",
@@ -782,6 +881,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 24,
     birthYear: 2005,
+    passedAway: null,
   },
   {
     firstName: "River",
@@ -789,6 +889,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 7,
     birthYear: 2007,
+    passedAway: null,
   },
   {
     firstName: "Trevor",
@@ -796,6 +897,7 @@ export const theNames = [
     birthMonth: "March",
     birthDay: 1,
     birthYear: 1969,
+    passedAway: null,
   },
   {
     firstName: "Laura",
@@ -803,6 +905,7 @@ export const theNames = [
     birthMonth: "December",
     birthDay: 31,
     birthYear: 1967,
+    passedAway: null,
   },
   {
     firstName: "Steven",
@@ -810,6 +913,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 7,
     birthYear: 1968,
+    passedAway: null,
   },
   {
     firstName: "Kimberly",
@@ -817,6 +921,7 @@ export const theNames = [
     birthMonth: "November",
     birthDay: 14,
     birthYear: 1975,
+    passedAway: null,
   },
   {
     firstName: "Jo-Ann",
@@ -824,6 +929,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 24,
     birthYear: 1976,
+    passedAway: null,
   },
   {
     firstName: "Michael",
@@ -831,5 +937,6 @@ export const theNames = [
     birthMonth: "October",
     birthDay: 14,
     birthYear: null,
+    passedAway: null,
   },
 ];
