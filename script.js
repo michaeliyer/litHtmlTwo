@@ -58,12 +58,28 @@ function displayResults(results) {
   results.forEach((aHuman) => {
     const div = document.createElement("div");
     div.className = "result";
-    div.innerHTML = `
-      <strong>${aHuman.firstName} ${aHuman.lastName}</strong><br>
-      Born: ${aHuman.birthMonth || "-"} ${aHuman.birthDay || ""}, ${
-      aHuman.birthYear || "-"
+    let birthday = "";
+    if (aHuman.birthMonth) {
+      birthday = aHuman.birthMonth;
+      if (aHuman.birthDay) {
+        birthday += ` ${aHuman.birthDay}`;
+        if (aHuman.birthYear) {
+          birthday += `, ${aHuman.birthYear}`;
+        }
+      } else if (aHuman.birthYear) {
+        birthday += `, ${aHuman.birthYear}`;
+      }
+    } else if (aHuman.birthDay) {
+      birthday = aHuman.birthDay;
+      if (aHuman.birthYear) {
+        birthday += `, ${aHuman.birthYear}`;
+      }
+    } else if (aHuman.birthYear) {
+      birthday = aHuman.birthYear;
     }
-    `;
+    div.innerHTML = `<strong>${aHuman.firstName} ${aHuman.lastName}</strong>${
+      birthday ? ": " + birthday : ""
+    }`;
     resultsDiv.appendChild(div);
   });
 }
