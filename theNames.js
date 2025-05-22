@@ -919,12 +919,13 @@ export const theNames = [
 
   {
     firstName: "John",
-    lastName: "S",
+    lastName: "Stewart",
     birthMonth: "July",
     birthDay: 31,
-    birthYear: null,
+    birthYear: 1969,
     passedAway: null,
-    comment: null,
+    comment:
+      "A nice guy but not particularly bright - Worried too much about trans stuff and in love with Trump - gross!",
   },
   {
     firstName: "Omer",
