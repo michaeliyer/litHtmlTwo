@@ -24,7 +24,7 @@ export const theNames = [
     birthDay: 28,
     birthYear: null,
     passedAway: "3/10/23",
-    comment: null,
+    comment: "❤️",
   },
   {
     firstName: "James",

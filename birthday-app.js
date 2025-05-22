@@ -7,22 +7,84 @@ class BirthdayApp extends LitElement {
   };
 
   static styles = css`
+    :host {
+      display: block;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+      color: #222;
+      padding: 2rem 0;
+    }
     .search-bar {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(180, 200, 220, 0.12);
+      padding: 1rem 1.5rem;
+      align-items: center;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     input,
     select,
     button {
-      padding: 0.4rem;
-      font-size: 1rem;
+      padding: 0.5rem 0.7rem;
+      font-size: 1.08rem;
+      border-radius: 6px;
+      border: 1px solid #c3cfe2;
+      background: #f8fafc;
+      transition: border 0.2s;
+    }
+    input:focus,
+    select:focus {
+      outline: none;
+      border: 1.5px solid #7b9acc;
+    }
+    button {
+      background: #7b9acc;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #5a7bb0;
     }
     .person {
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      border-bottom: 1px solid #ccc;
+      margin-bottom: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(180, 200, 220, 0.13);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.13rem;
+      line-height: 1.6;
+      border-left: 5px solid #7b9acc;
+    }
+    .person strong {
+      font-size: 1.22rem;
+      color: #3a4a6b;
+      letter-spacing: 0.5px;
+    }
+    .comment {
+      margin-top: 0.5rem;
+      color: #5a7bb0;
+      font-style: italic;
+      font-size: 1.05rem;
+      word-break: break-word;
+    }
+    @media (max-width: 600px) {
+      .search-bar,
+      .person {
+        padding: 1rem 0.5rem;
+      }
     }
   `;
 
