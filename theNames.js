@@ -33,7 +33,7 @@ export const theNames = [
     birthDay: 13,
     birthYear: null,
     passedAway: "6/13/11",
-    comment: null,
+    comment: "A great guy",
   },
   {
     firstName: "Sue",
