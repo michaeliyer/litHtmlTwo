@@ -923,7 +923,7 @@ export const theNames = [
     birthMonth: "July",
     birthDay: 31,
     birthYear: 1969,
-    passedAway: null,
+    passedAway: "Ok, he's alive but dead in terms of brain power",
     comment:
       "A nice guy but not particularly bright - Worried too much about trans stuff and in love with Trump - gross!",
   },
@@ -961,7 +961,8 @@ export const theNames = [
     birthDay: 1,
     birthYear: null,
     passedAway: "July 11, 2003",
-    comment: null,
+    comment:
+      "You and that asshole Bob Harvey shouldn't have ganged up on me. That was low rent man.",
   },
   {
     firstName: "Peggy",
