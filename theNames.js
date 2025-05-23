@@ -218,11 +218,11 @@ export const theNames = [
   {
     firstName: "John",
     lastName: "Hen",
-    birthMonth: null,
-    birthDay: null,
-    birthYear: null,
-    passedAway: "8/9/69",
-    comment: null,
+    birthMonth: "November",
+    birthDay: 6,
+    birthYear: 1916,
+    passedAway: "11/9/69",
+    comment: "Grandfather",
   },
   {
     firstName: "Rose",
@@ -233,7 +233,6 @@ export const theNames = [
     passedAway: null,
     comment: null,
   },
-
   {
     firstName: "Katherine",
     lastName: "How",
@@ -636,6 +635,7 @@ export const theNames = [
     birthMonth: "August",
     birthDay: 17,
     birthYear: null,
+    passedAway: null,
     comment: null,
   },
   {
@@ -970,6 +970,7 @@ export const theNames = [
     birthMonth: "April",
     birthDay: 7,
     birthYear: null,
+    passedAway: null,
     comment: null,
   },
   {
@@ -978,6 +979,7 @@ export const theNames = [
     birthMonth: null,
     birthDay: null,
     birthYear: null,
+    passedAway: null,
     comment: null,
   },
   {
