@@ -127,7 +127,11 @@ class BirthdayApp extends LitElement {
           (!pa || p.passedAway === true)
         );
       })
-      .sort((a, b) => a.lastName.localeCompare(b.lastName));
+      .sort((a, b) => {
+        const last = a.lastName.localeCompare(b.lastName);
+        if (last !== 0) return last;
+        return a.firstName.localeCompare(b.firstName);
+      });
   }
 
   clearFilters() {
