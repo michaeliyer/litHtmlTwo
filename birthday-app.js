@@ -116,15 +116,15 @@ class BirthdayApp extends LitElement {
         const bm = this.filters.birthMonth.toLowerCase();
         const bd = this.filters.birthDay;
         const by = this.filters.birthYear;
-        const pa = this.filters.passedAway;
 
         return (
           (!fn || p.firstName.toLowerCase().startsWith(fn)) &&
           (!ln || p.lastName.toLowerCase().startsWith(ln)) &&
-          (!bm || (p.birthMonth && p.birthMonth.toLowerCase() === bm)) &&
+          (!bm ||
+            bm === "all months" ||
+            (p.birthMonth && p.birthMonth.toLowerCase() === bm)) &&
           (!bd || p.birthDay == bd) &&
-          (!by || p.birthYear == by) &&
-          (!pa || p.passedAway === true)
+          (!by || p.birthYear == by)
         );
       })
       .sort((a, b) => {
@@ -132,6 +132,43 @@ class BirthdayApp extends LitElement {
         if (last !== 0) return last;
         return a.firstName.localeCompare(b.firstName);
       });
+  }
+
+  getMonthCounts() {
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const counts = {};
+    let totalWithBirthdays = 0;
+
+    months.forEach((month) => {
+      counts[month] = theNames.filter(
+        (p) =>
+          p.birthMonth && p.birthMonth.toLowerCase() === month.toLowerCase()
+      ).length;
+    });
+
+    // Only count entries that have a valid month name
+    totalWithBirthdays = theNames.filter(
+      (p) =>
+        p.birthMonth &&
+        months.some(
+          (month) => month.toLowerCase() === p.birthMonth.toLowerCase()
+        )
+    ).length;
+
+    return { counts, totalWithBirthdays };
   }
 
   clearFilters() {
@@ -170,6 +207,12 @@ class BirthdayApp extends LitElement {
           @change=${(e) => this.updateFilter("birthMonth", e.target.value)}
         >
           <option value="">-- Month --</option>
+          <option
+            value="all months"
+            ?selected=${this.filters.birthMonth.toLowerCase() === "all months"}
+          >
+            All Months (${this.getMonthCounts().totalWithBirthdays})
+          </option>
           ${[
             "January",
             "February",
@@ -183,17 +226,18 @@ class BirthdayApp extends LitElement {
             "October",
             "November",
             "December",
-          ].map(
-            (month) => html`
+          ].map((month) => {
+            const count = this.getMonthCounts().counts[month];
+            return html`
               <option
                 value=${month.toLowerCase()}
                 ?selected=${this.filters.birthMonth.toLowerCase() ===
                 month.toLowerCase()}
               >
-                ${month}
+                ${month} (${count})
               </option>
-            `
-          )}
+            `;
+          })}
         </select>
 
         <input
