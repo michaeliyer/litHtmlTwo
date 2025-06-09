@@ -236,11 +236,11 @@ export const theNames = [
   {
     firstName: "Rose",
     lastName: "Hen.",
-    birthMonth: null,
-    birthDay: null,
-    birthYear: null,
+    birthMonth: "September",
+    birthDay: 27,
+    birthYear: 2023,
     passedAway: null,
-    comment: null,
+    comment: "Daniel's Kid",
   },
   {
     firstName: "Katherine",
