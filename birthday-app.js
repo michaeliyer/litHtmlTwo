@@ -96,7 +96,7 @@ class BirthdayApp extends LitElement {
       birthMonth: "",
       birthDay: "",
       birthYear: "",
-      family: "",
+      group: "",
       passedAway: false,
     };
   }
@@ -117,7 +117,7 @@ class BirthdayApp extends LitElement {
         const bm = this.filters.birthMonth.toLowerCase();
         const bd = this.filters.birthDay;
         const by = this.filters.birthYear;
-        const family = this.filters.family.toLowerCase();
+        const group = this.filters.group.toLowerCase();
 
         return (
           (!fn || p.firstName.toLowerCase().startsWith(fn)) &&
@@ -127,7 +127,7 @@ class BirthdayApp extends LitElement {
             (p.birthMonth && p.birthMonth.toLowerCase() === bm)) &&
           (!bd || p.birthDay == bd) &&
           (!by || p.birthYear == by) &&
-          (!family || (p.family && p.family.toLowerCase() === family))
+          (!group || (p.group && p.group.toLowerCase() === group))
         );
       })
       .sort((a, b) => {
@@ -174,6 +174,16 @@ class BirthdayApp extends LitElement {
     return { counts, totalWithBirthdays };
   }
 
+  getUniqueGroups() {
+    const groups = new Set();
+    theNames.forEach((person) => {
+      if (person.group && person.group.trim() !== "") {
+        groups.add(person.group);
+      }
+    });
+    return Array.from(groups).sort();
+  }
+
   clearFilters() {
     this.filters = {
       firstName: "",
@@ -181,7 +191,7 @@ class BirthdayApp extends LitElement {
       birthMonth: "",
       birthDay: "",
       birthYear: "",
-      family: "",
+      group: "",
     };
   }
 
@@ -206,40 +216,19 @@ class BirthdayApp extends LitElement {
           @input=${(e) => this.updateFilter("lastName", e.target.value)}
         />
 
-        <select @change=${(e) => this.updateFilter("family", e.target.value)}>
-          <option value="" ?selected=${!this.filters.family}>
-            -- Family --
-          </option>
-          <option
-            value="pet"
-            ?selected=${this.filters.family.toLowerCase() === "pet"}
-          >
-            Pet
-          </option>
-          <option
-            value="my people"
-            ?selected=${this.filters.family.toLowerCase() === "my people"}
-          >
-            My People
-          </option>
-          <option
-            value="jackal's people"
-            ?selected=${this.filters.family.toLowerCase() === "jackal's people"}
-          >
-            Jackal's People
-          </option>
-          <option
-            value="t'sut"
-            ?selected=${this.filters.family.toLowerCase() === "t'sut"}
-          >
-            T'sut
-          </option>
-          <option
-            value="random"
-            ?selected=${this.filters.family.toLowerCase() === "random"}
-          >
-            Random
-          </option>
+        <select @change=${(e) => this.updateFilter("group", e.target.value)}>
+          <option value="" ?selected=${!this.filters.group}>-- Group --</option>
+          ${this.getUniqueGroups().map(
+            (group) => html`
+              <option
+                value=${group.toLowerCase()}
+                ?selected=${this.filters.group.toLowerCase() ===
+                group.toLowerCase()}
+              >
+                ${group}
+              </option>
+            `
+          )}
         </select>
 
         <select
