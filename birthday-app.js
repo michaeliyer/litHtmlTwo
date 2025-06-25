@@ -211,16 +211,28 @@ class BirthdayApp extends LitElement {
             -- Family --
           </option>
           <option
-            value="bignell"
-            ?selected=${this.filters.family.toLowerCase() === "bignell"}
+            value="pet"
+            ?selected=${this.filters.family.toLowerCase() === "pet"}
           >
-            Bignell
+            Pet
           </option>
           <option
-            value="williams"
-            ?selected=${this.filters.family.toLowerCase() === "williams"}
+            value="my people"
+            ?selected=${this.filters.family.toLowerCase() === "my people"}
           >
-            Williams
+            My People
+          </option>
+          <option
+            value="jackal's people"
+            ?selected=${this.filters.family.toLowerCase() === "jackal's people"}
+          >
+            Jackal's People
+          </option>
+          <option
+            value="t'sut"
+            ?selected=${this.filters.family.toLowerCase() === "t'sut"}
+          >
+            T'sut
           </option>
           <option
             value="random"
@@ -287,6 +299,10 @@ class BirthdayApp extends LitElement {
 
       ${anyFilterActive
         ? html`
+            <div style="margin-bottom: 1rem; font-weight: 500; color: #5a7bb0;">
+              ${this.filteredPeople.length}
+              result${this.filteredPeople.length !== 1 ? "s" : ""} found
+            </div>
             ${this.filteredPeople.length === 0
               ? html`<div>No results found.</div>`
               : ""}
@@ -298,7 +314,7 @@ class BirthdayApp extends LitElement {
                   ${person.birthYear || "-"}<br />
                   ${person.passedAway
                     ? html`🕊️ Passed Away: ${person.passedAway} --- RIP
-                        ${person.firstName}<br />`
+                        ${person.firstName} ${person.lastName}<br />`
                     : ""}
                   ${person.comment
                     ? html`<div class="comment">💬 ${person.comment}</div>`
