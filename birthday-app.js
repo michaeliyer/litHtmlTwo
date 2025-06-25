@@ -96,6 +96,7 @@ class BirthdayApp extends LitElement {
       birthMonth: "",
       birthDay: "",
       birthYear: "",
+      family: "",
       passedAway: false,
     };
   }
@@ -116,6 +117,7 @@ class BirthdayApp extends LitElement {
         const bm = this.filters.birthMonth.toLowerCase();
         const bd = this.filters.birthDay;
         const by = this.filters.birthYear;
+        const family = this.filters.family.toLowerCase();
 
         return (
           (!fn || p.firstName.toLowerCase().startsWith(fn)) &&
@@ -124,7 +126,8 @@ class BirthdayApp extends LitElement {
             bm === "all months" ||
             (p.birthMonth && p.birthMonth.toLowerCase() === bm)) &&
           (!bd || p.birthDay == bd) &&
-          (!by || p.birthYear == by)
+          (!by || p.birthYear == by) &&
+          (!family || (p.family && p.family.toLowerCase() === family))
         );
       })
       .sort((a, b) => {
@@ -178,7 +181,7 @@ class BirthdayApp extends LitElement {
       birthMonth: "",
       birthDay: "",
       birthYear: "",
-      passedAway: false,
+      family: "",
     };
   }
 
@@ -203,10 +206,36 @@ class BirthdayApp extends LitElement {
           @input=${(e) => this.updateFilter("lastName", e.target.value)}
         />
 
+        <select @change=${(e) => this.updateFilter("family", e.target.value)}>
+          <option value="" ?selected=${!this.filters.family}>
+            -- Family --
+          </option>
+          <option
+            value="bignell"
+            ?selected=${this.filters.family.toLowerCase() === "bignell"}
+          >
+            Bignell
+          </option>
+          <option
+            value="williams"
+            ?selected=${this.filters.family.toLowerCase() === "williams"}
+          >
+            Williams
+          </option>
+          <option
+            value="random"
+            ?selected=${this.filters.family.toLowerCase() === "random"}
+          >
+            Random
+          </option>
+        </select>
+
         <select
           @change=${(e) => this.updateFilter("birthMonth", e.target.value)}
         >
-          <option value="">-- Month --</option>
+          <option value="" ?selected=${!this.filters.birthMonth}>
+            -- Month --
+          </option>
           <option
             value="all months"
             ?selected=${this.filters.birthMonth.toLowerCase() === "all months"}
