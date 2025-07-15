@@ -323,7 +323,7 @@ export const theNames = [
     firstName: "Shekar",
     lastName: "I.",
     birthMonth: "July",
-    birthDay: 14,
+    birthDay: 15,
     birthYear: 1963,
     passedAway: null,
     comment: null,
