@@ -631,7 +631,7 @@ export const theNames = [
   },
   {
     firstName: "Eleanor",
-    lastName: "L",
+    lastName: "Lar",
     birthMonth: "July",
     birthDay: 6,
     birthYear: null,
